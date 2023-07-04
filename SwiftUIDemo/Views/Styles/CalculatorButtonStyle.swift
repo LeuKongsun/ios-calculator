@@ -18,6 +18,7 @@ struct CalculatorButtonStyle: ButtonStyle {
             .font(.system(size: 32, weight: .medium))
             .frame(width: size, height: size)
             .frame(maxWidth: isWide ? .infinity : size, alignment: .leading)
+            .background(backgroundColor)
             .foregroundColor(foregroundColor)
             .overlay{
                 if configuration.isPressed {
